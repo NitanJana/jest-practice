@@ -23,3 +23,15 @@ test("subtract string with number", () => {
 test("subtract decimal numbers", () => {
   expect(calculator.subtract(3.5, 3)).toBe(0.5);
 });
+
+test("multiply integer numbers", () => {
+  expect(calculator.multiply(2, 3)).toBe(6);
+});
+
+test("multiply string with number", () => {
+  expect(calculator.multiply("hello", 3)).toBe("Not valid Number(s)");
+});
+
+test("multiply decimal numbers", () => {
+  expect(calculator.multiply(3.5, 3)).toBe(10.5);
+});
