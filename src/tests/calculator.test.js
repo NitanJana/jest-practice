@@ -7,3 +7,7 @@ test("calculator.add(2,3) returns 5", () => {
 test("calculator.add(hello,3) returns Not valid Number(s)", () => {
   expect(calculator.add("hello", 3)).toBe("Not valid Number(s)");
 });
+
+test("add decimal numbers", () => {
+  expect(calculator.add(3.5, 3)).toBe(6.5);
+});
