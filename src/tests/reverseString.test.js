@@ -15,3 +15,7 @@ test(`"12345" returns "54321"`, () => {
 test("12345 returns Not a String", () => {
   expect(reverseString(12345)).toBe("Not a String");
 });
+
+test("Empty String returns Empty String", () => {
+  expect(reverseString("")).toBe("");
+});
