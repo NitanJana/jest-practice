@@ -35,3 +35,15 @@ test("multiply string with number", () => {
 test("multiply decimal numbers", () => {
   expect(calculator.multiply(3.5, 3)).toBe(10.5);
 });
+
+test("divide integer numbers", () => {
+  expect(calculator.divide(2, 3)).toBe(0.67);
+});
+
+test("divide string with number", () => {
+  expect(calculator.divide("hello", 3)).toBe("Not valid Number(s)");
+});
+
+test("divide decimal numbers", () => {
+  expect(calculator.divide(3.5, 3)).toBe(1.17);
+});
