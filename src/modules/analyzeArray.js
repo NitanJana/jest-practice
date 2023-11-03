@@ -7,7 +7,8 @@ const calcLength = (array) => {
 };
 
 const calcAverage = (array) => {
-  return calcSum(array) / calcLength(array);
+  const result = calcSum(array) / calcLength(array);
+  return Number.isInteger(result) ? result : parseFloat(result.toFixed(2));
 };
 
 const calcMin = (array) => {

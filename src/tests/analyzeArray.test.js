@@ -9,6 +9,24 @@ test("Array of Numbers", () => {
   });
 });
 
+test("Array of Numbers", () => {
+  expect(analyzeArray([43, 28, 13, 44, 32, 16])).toEqual({
+    average: 29.33,
+    min: 13,
+    max: 44,
+    length: 6,
+  });
+});
+
+test("Array of Decimal Numbers", () => {
+  expect(analyzeArray([1.08, 8.5, 3.46, 4.33, 2.9, 16])).toEqual({
+    average: 6.04,
+    min: 1.08,
+    max: 16,
+    length: 6,
+  });
+});
+
 test("Array of Strings", () => {
   expect(analyzeArray(["Hello", "World"])).toBe("Not a valid Array");
 });
