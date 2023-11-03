@@ -11,3 +11,7 @@ test("Empty string", () => {
 test("number", () => {
   expect(capitalize(102)).toBe("Not valid String");
 });
+
+test("symbols", () => {
+  expect(capitalize("#$%^")).toBe("#$%^");
+});
